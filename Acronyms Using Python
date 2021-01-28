@@ -1,0 +1,18 @@
+## What is a Acronmy? ##
+
+### Acronmy is nothing but a short form for a bigger phrase: ##
+    
+    Example: We have something called LED which stands for Light Emitting Diode.
+
+## Code ##
+
+user_input = input('Enter a phrase:').split(' ')
+output_list = []
+if user_input[0] != '':
+    for i in range(len(user_input)):
+        To_upper = user_input[i][0].upper()
+        output_list.append(To_upper)
+    print(''.join(output_list))
+else:
+    print('Please start the phrase without any space')
+
