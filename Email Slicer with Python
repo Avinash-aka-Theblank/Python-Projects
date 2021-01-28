@@ -1,0 +1,13 @@
+## Email slicer with python
+
+### What do you mean by email slicer?
+
+        It means that you slice the data into two part give out the user name and the domain name.
+        
+        Let's start !!
+
+## Code
+
+user_input = input("Please enter a email id:").split('@')
+print(f'Username:{user_input[0]}, Domain:{user_input[1]}')
+
