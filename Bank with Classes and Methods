@@ -1,0 +1,19 @@
+class Bank():
+    
+    def __init__(self,owner,balance):
+        self.owner = owner
+        self.balance = balance
+        
+    def __str__(self):
+        return f"Account Owner: {self.owner} \nAccount Balance: {self.balance}"
+    
+    def deposite(self,deposite_amount):
+        self.balance += deposite_amount
+        print('Deposite Accepted')
+        
+    def withdrawl(self,withdrawl_amount):
+        if self.balance >=withdrawl_amount:
+            self.balance -= withdrawl_amount
+            print('Withdrwal Accpeted')
+        else:
+            print('Funds Unavailable')
